@@ -91,7 +91,7 @@ There is a pre-existing function already called `S3ToFluentBitTrigger` but if yo
       https://docs.fluentbit.io/manual/installation/linux/amazon-linux
 
     - Copy the "Single line install command"
-      curl https://raw.githubusercontent.com/fluent/fluent-bit/master/install.sh | sh
+      `curl https://raw.githubusercontent.com/fluent/fluent-bit/master/install.sh | sh`
 2. Configure Fluent Bit using `fluent-bit.conf` and `parsers.conf` files.
 
 ### Configuration Files
