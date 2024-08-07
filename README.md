@@ -49,11 +49,31 @@ The purpose of this project is to set up a Security Information and Event Manage
 2. Create a New Lambda Function:
     - Click on Create function.
     - Select Author from scratch.
-    - Enter a function name (e.g., S3ToOpenSearchFunction).
+    - Enter a function name (e.g., S3ToFluentBitTrigger).
     - Choose Python 3.12 as the runtime.
     - Under Permissions, choose Create a new role with basic Lambda permissions.
     - Click Create function.
 3. Prepare Lambda Function Code:
+    - `lambda_function.py`
+4. Set Up Execution Role:
+    - Go to the IAM console.
+    - Create a new policy with permissions for S3 and OpenSearch.
+    - Attach the policy to the Lambda execution role.
+5. Add an S3 Trigger:
+    - Go back to the Lambda console.
+    - Select your Lambda function.
+    - Click Add trigger.
+    - Select S3.
+    - Choose your bucket.
+    - Set the event type to ObjectCreated.
+    - Add a suffix (e.g., .log).
+    - Click Add.
+6. Set up Enviroment Variables:
+
+![image](https://github.com/user-attachments/assets/52a55f41-1aff-413b-856c-f620312a76d0)
+
+*Replace with your own values*
+
 
 
 
