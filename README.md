@@ -87,6 +87,11 @@ There is a pre-existing function already called `S3ToFluentBitTrigger` but if yo
 
 ### Fluent Bit Installation
 1. Install Fluent Bit on the EC2 instance.
+    - Using a separate web browser tab, review this manual:
+      https://docs.fluentbit.io/manual/installation/linux/amazon-linux
+
+    - Copy the "Single line install command"
+      curl https://raw.githubusercontent.com/fluent/fluent-bit/master/install.sh | sh
 2. Configure Fluent Bit using `fluent-bit.conf` and `parsers.conf` files.
 
 ### Configuration Files
