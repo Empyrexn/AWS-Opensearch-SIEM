@@ -40,10 +40,6 @@ The purpose of this project is to set up a Security Information and Event Manage
 1. Since We're using a pre-existing bucket `ts-cybersec--is-2024-os-1` we can move on to the next step.
 
 ### Create/Configure Opensearch Domain
-
-
-Please refer to the [Amazon OpenSearch Service Guide](./Amazon%20OpenSearch%20Service%20_%20us-west-1.pdf) for detailed information.
-
 1. Since We're using a pre-existing domain `ts-cybersec--is-2024-os-aa` we can move on to the next step.
 
 ### Create/Configure Lambda Function
