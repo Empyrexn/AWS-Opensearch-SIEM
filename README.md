@@ -43,6 +43,9 @@ The purpose of this project is to set up a Security Information and Event Manage
 1. Since We're using a pre-existing domain `ts-cybersec--is-2024-os-aa` we can move on to the next step.
 
 ### Create/Configure Lambda Function
+
+There is a pre-existing function already called `S3ToFluentBitTrigger` but if you need to make a new function this is how you would do it:
+
 1. Go to AWS Lambda Console:
     - Navigate to the AWS Management Console.
     - Choose the Lambda service.
@@ -74,9 +77,6 @@ The purpose of this project is to set up a Security Information and Event Manage
 
 *Replace with your own values*
 
-
-
-
 ### EC2 Instance Setup
 1. Launch an EC2 instance from the AWS Management Console.
 2. Configure security groups to allow necessary traffic (e.g., SSH, HTTP, HTTPS).
@@ -86,11 +86,6 @@ The purpose of this project is to set up a Security Information and Event Manage
 ### Fluent Bit Installation
 1. Install Fluent Bit on the EC2 instance.
 2. Configure Fluent Bit using `fluent-bit.conf` and `parsers.conf` files.
-
-### OpenSearch Setup
-1. Install OpenSearch on the EC2 instance.
-2. Configure OpenSearch for the SIEM use case.
-3. Create indices for storing logs.
 
 ### Configuration Files
 
