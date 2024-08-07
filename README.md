@@ -73,11 +73,11 @@ There is a pre-existing function already called `S3ToFluentBitTrigger` but if yo
     - Click Add.
 6. Set up Enviroment Variables:
 
-BUCKET_NAME       | “s3 bucket name”
+    BUCKET_NAME       | “s3 bucket name”
 
-EC2_INSTANCE_ID   |“ec2 instance id”
+    EC2_INSTANCE_ID   |“ec2 instance id”
 
-REMOTE_PATH       |“destination path where your logs are stored in ec2”
+    REMOTE_PATH       |“destination path where your logs are stored in ec2”
 
 ### EC2 Instance Setup
 1. Launch an EC2 instance from the AWS Management Console.
